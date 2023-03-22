@@ -10,8 +10,10 @@ namespace elsoasdf
     {
         static void Main(string[] args)
         {
+            // "Hello World!"
             Console.WriteLine("Hello World!");
 
+            //bekérések
             int Szam_1;
             int Szam_2;
             int Sum = 0;
