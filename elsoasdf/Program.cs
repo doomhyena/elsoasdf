@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -66,8 +67,28 @@ namespace elsoasdf
 
             Console.Write("A monogram: ");
             Console.WriteLine(monogram);
-            Console.ReadKey();
 
+            // Elágzások 
+
+            // Változó deklarálása
+            int ora = 0;
+            // Bekérés
+            Console.Write("Kérek egy óra számot: ");
+            // ora változó feltöltése a bekért értékkel
+            ora = int.Parse(Console.ReadLine());
+            if (ora >= 0 && ora <= 8) 
+            {
+                Console.WriteLine("Jó Reggelt!");
+            }
+            else if (ora > 8 && ora <= 18)
+            {
+                Console.WriteLine("Jó napot!");
+            }
+            else 
+            { 
+                Console.WriteLine("Jó éjszakát!"); 
+            }
+            Console.ReadKey();
         }
     }
 }
